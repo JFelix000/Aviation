@@ -6,5 +6,47 @@
     File Name: main.css 
     */
 html {
-    background-color: whitesmoke;
+    background-color: orange;
+}
+
+body {
+    margin-top: 5px;
+}
+.flexContainer {
+    clear: both;
+    content: "";
+    display: table;
+    display: flex;
+    background: whitesmoke;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+}
+.flexContainer div img {
+    width: 400px;
+    height: 250px;
+}
+
+header nav#horizontal ul {
+    list-style-type: none;
+    margin: 0;
+    
+    padding: 0;
+}
+header nav#horizontal li {
+    display: inline;
+    float: left;
+    width: 20%;
+    text-align: center;
+    overflow: hidden;
+    border: solid white 1px;
+}
+
+nav#horizontal li a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+    color: white;
+}
+nav#horizontal li a:hover {
+    color: orange;
 }
